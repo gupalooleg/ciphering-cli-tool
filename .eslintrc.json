@@ -12,6 +12,6 @@
   "rules": {
     "prettier/prettier": "error",
     "import/prefer-default-export": "off",
-    "import/extensions": "always"
+    "import/extensions": ["error", "always"]
   }
 }
