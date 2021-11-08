@@ -13,15 +13,15 @@ class Atbash {
     return char === char.toUpperCase() ? newChar : newChar.toLowerCase();
   }
 
-  encrypt(str) {
+  encode(str) {
     return str
       .split('')
       .map((char) => this.getNewChar(char))
       .join('');
   }
 
-  decrypt(str) {
-    return this.encrypt(str);
+  decode(str) {
+    return this.encode(str);
   }
 }
 

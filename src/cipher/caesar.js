@@ -15,14 +15,14 @@ class Caesar {
     return char === char.toUpperCase() ? newChar : newChar.toLowerCase();
   }
 
-  encrypt(str) {
+  encode(str) {
     return str
       .split('')
       .map((char) => this.getNewChar(char, this.shift))
       .join('');
   }
 
-  decrypt(str) {
+  decode(str) {
     return str
       .split('')
       .map((char) => this.getNewChar(char, this.shift * -1))

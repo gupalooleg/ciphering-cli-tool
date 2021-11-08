@@ -5,12 +5,12 @@ class ROT {
     this.caesar = new Caesar(alphabet, shift);
   }
 
-  encrypt(str) {
-    return this.caesar.encrypt(str);
+  encode(str) {
+    return this.caesar.encode(str);
   }
 
-  decrypt(str) {
-    return this.caesar.decrypt(str);
+  decode(str) {
+    return this.caesar.decode(str);
   }
 }
 
