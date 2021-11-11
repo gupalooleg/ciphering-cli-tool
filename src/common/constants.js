@@ -1,0 +1,34 @@
+const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+const CLI_ARGUMENTS = {
+  CONFIG: {
+    FLAGS: ['-c', '--config'],
+  },
+  INPUT: {
+    FLAGS: ['-i', '--input'],
+  },
+  OUTPUT: {
+    FLAGS: ['-o', '--output'],
+  },
+};
+
+const CIPHER = {
+  ATBASH: 'A',
+  CAESAR: 'C',
+  ROT: 'R',
+};
+
+const CIPHER_ACTIONS = {
+  ENCODE: 1,
+  DECODE: 0,
+};
+
+const CIPHER_PATTERN = [
+  `${CIPHER.ATBASH}`,
+  `${CIPHER.CAESAR}${CIPHER_ACTIONS.ENCODE}`,
+  `${CIPHER.CAESAR}${CIPHER_ACTIONS.DECODE}`,
+  `${CIPHER.ROT}${CIPHER_ACTIONS.ENCODE}`,
+  `${CIPHER.ROT}${CIPHER_ACTIONS.DECODE}`,
+];
+
+export { ALPHABET, CLI_ARGUMENTS, CIPHER, CIPHER_ACTIONS, CIPHER_PATTERN };
