@@ -7,3 +7,4 @@ export {
   MESSAGES,
 } from './constants.js';
 export { formatString } from './formatString.js';
+export { prepareCipherTransformStreams } from './prepareCipherTransformStreams.js';
