@@ -1,4 +1,4 @@
-import { ALPHABET, CIPHER } from './index.js';
+import { ALPHABET, CIPHER } from './constants.js';
 import { Atbash, Caesar, ROT } from '../cipher/index.js';
 import { CipherTransformStream } from '../stream/index.js';
 
