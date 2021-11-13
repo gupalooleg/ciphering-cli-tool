@@ -31,4 +31,12 @@ const CIPHER_PATTERN = [
   `${CIPHER.ROT}${CIPHER_ACTIONS.DECODE}`,
 ];
 
-export { ALPHABET, CLI_ARGUMENTS, CIPHER, CIPHER_ACTIONS, CIPHER_PATTERN };
+const MESSAGES = {
+  CONFIGURATION_ARGUMENT_WRONG:
+    "Part of the configuration argument value '{0}' does not match the required pattern.",
+  ARGUMENT_VALUE_NOT_SPECIFIED: "The value for the argument '{0}' is not specified.",
+  CONFIGURATION_ARGUMENT_REQUIRED: "The configuration argument '{0}' is required.",
+  DUPLICATION_ARGUMENTS_PROHIBITED: 'Duplication of arguments is prohibited.',
+};
+
+export { ALPHABET, CLI_ARGUMENTS, CIPHER, CIPHER_ACTIONS, CIPHER_PATTERN, MESSAGES };
