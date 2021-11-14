@@ -33,10 +33,19 @@ const CIPHER_PATTERN = [
 
 const MESSAGES = {
   CONFIGURATION_ARGUMENT_WRONG:
-    "Part of the configuration argument value '{0}' does not match the required pattern.",
-  ARGUMENT_VALUE_NOT_SPECIFIED: "The value for the argument '{0}' is not specified.",
-  CONFIGURATION_ARGUMENT_REQUIRED: "The configuration argument '{0}' is required.",
-  DUPLICATION_ARGUMENTS_PROHIBITED: 'Duplication of arguments is prohibited.',
+    'Error: Part of the configuration argument value "{0}" does not match the required pattern.',
+  ARGUMENT_VALUE_NOT_SPECIFIED: 'Error: The value for the argument "{0}" is not specified.',
+  CONFIGURATION_ARGUMENT_REQUIRED: 'Error: The configuration argument "{0}" is required.',
+  DUPLICATION_ARGUMENTS_PROHIBITED: 'Error: Duplication of arguments is prohibited.',
+  EACCES:
+    'Error: (Permission denied). An attempt was made to access file "{0}" in a way forbidden by its file access permissions.',
+  EISDIR:
+    'Error: (Is a directory). An operation expected a file, but the given pathname "{0}" was directory.',
+  ENOENT:
+    'Error: (No such file or directory). No entity (file or directory) could be found by the given path "{0}".',
+  EPERM:
+    'Error: (Operation not permitted). An attempt was made to perform an operation with "{0}" that requires elevated privileges.',
+  ENTER_TEXT: 'Enter text: \n',
 };
 
 export { ALPHABET, CLI_ARGUMENTS, CIPHER, CIPHER_ACTIONS, CIPHER_PATTERN, MESSAGES };
