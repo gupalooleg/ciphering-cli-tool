@@ -1,0 +1,34 @@
+{
+  "name": "ciphering-cli-tool",
+  "version": "1.0.0",
+  "description": "Ciphering CLI tool",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:dev": "nodemon src/index.js",
+    "eslint": "eslint src/ --debug",
+    "eslint:fix": "eslint src/ --debug --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gupalooleg/ciphering-cli-tool.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gupalooleg/ciphering-cli-tool/issues"
+  },
+  "homepage": "https://github.com/gupalooleg/ciphering-cli-tool#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1",
+    "nodemon": "^2.0.14"
+  }
+}
