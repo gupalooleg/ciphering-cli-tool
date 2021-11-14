@@ -6,15 +6,11 @@ This application was implemented as part of the course [NodeJS 2021Q4](https://r
 
 ## Installation and launch
 
----
-
 1. Clone the repository branch: `git clone https://github.com/gupalooleg/ciphering-cli-tool.git -b develop`.
 2. Go to the application directory: `cd ciphering-cli-tool`.
 3. Run the application: `node .`.
 
 ## Usage
-
----
 
 ### Arguments
 
