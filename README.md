@@ -38,29 +38,29 @@ Error generation cases:
 
 ### Examples
 
-1. `node . -c "C1-R1-A" -i "input.txt" -o "output.txt"`
+- `node . -c "C1-R1-A" -i "input.txt" -o "output.txt"`
 
-   > INPUT: input.txt>>>This is secret!
-   >
-   > OUTPUT: output.txt>>>Xjiy iy ymozmx!
+  > INPUT: input.txt>>>This is secret!
+  >
+  > OUTPUT: output.txt>>>Xjiy iy ymozmx!
 
-2. `node . -c "R1-C1-R0-A" -i "input.txt"`
+- `node . -c "R1-C1-R0-A" -i "input.txt"`
 
-   > INPUT: input.txt>>>This is secret!
-   >
-   > OUTPUT: console>>>Frqg qg guwhuf!
+  > INPUT: input.txt>>>This is secret!
+  >
+  > OUTPUT: console>>>Frqg qg guwhuf!
 
-3. `node . -c "A-A-R0-C0" -o "output.txt"`
+- `node . -c "A-A-R0-C0" -o "output.txt"`
 
-   > INPUT: console>>>This is secret!
-   >
-   > OUTPUT: output.txt>>>Kyzj zj jvtivk!
+  > INPUT: console>>>This is secret!
+  >
+  > OUTPUT: output.txt>>>Kyzj zj jvtivk!
 
-4. `node . -c "C1-R1-C0-C0-A-R0-R1-R1-A-C1"`
+- `node . -c "C1-R1-C0-C0-A-R0-R1-R1-A-C1"`
 
-   > INPUT: console>>>This is secret!
-   >
-   > OUTPUT: console>>>This is secret!
+  > INPUT: console>>>This is secret!
+  >
+  > OUTPUT: console>>>This is secret!
 
-5. `node .`
-   > OUTPUT: console>>>Error: The configuration argument "-c, --config" is required.
+- `node .`
+  > OUTPUT: console>>>Error: The configuration argument "-c, --config" is required.
