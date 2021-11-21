@@ -3,7 +3,7 @@ import { CLIError } from '../error/cliError.js';
 
 class CLIHandler {
   constructor() {
-    this.arguments = process.argv.slice(2);
+    this.arguments = CLIHandler.retrieveProcessArguments();
   }
 
   static parseConfigArgumentAccordingToPatterns(config) {
@@ -14,6 +14,10 @@ class CLIHandler {
       prevValue.push({ cipher: currValue[0], action: currValue[1] ? +currValue[1] : null });
       return prevValue;
     }, []);
+  }
+
+  static retrieveProcessArguments() {
+    return process.argv.slice(2);
   }
 
   getLaunchParameters() {
