@@ -16,6 +16,21 @@ try {
     : process.stdout;
 
   cipherTransformStreams = prepareCipherTransformStreams(launchParameters.config);
+
+  if (process.stdin === readStream) {
+    process.stdout.write(MESSAGES.ENTER_TEXT);
+  }
+
+  pipeline(readStream, ...cipherTransformStreams, writeStream, (e) => {
+    if (e) {
+      if (e instanceof CCTError) {
+        process.stderr.write(e.message);
+        process.exit(1);
+      } else {
+        throw e;
+      }
+    }
+  });
 } catch (e) {
   if (e instanceof CCTError) {
     process.stderr.write(e.message);
@@ -24,18 +39,3 @@ try {
     throw e;
   }
 }
-
-if (process.stdin === readStream) {
-  process.stdout.write(MESSAGES.ENTER_TEXT);
-}
-
-pipeline(readStream, ...cipherTransformStreams, writeStream, (e) => {
-  if (e) {
-    if (e instanceof CCTError) {
-      process.stderr.write(e.message);
-      process.exit(1);
-    } else {
-      throw e;
-    }
-  }
-});
